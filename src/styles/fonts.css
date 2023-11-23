@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'Franklin Gothic';
+    src: url('/assets/fonts/franklin/franklin-font.woff2');
+}
+
+@font-face {
+    font-family: 'Cantarell';
+    src: url('/assets/fonts/cantarell/Cantarell-Regular.woff2');
+}
+
+@font-face {
+    font-family: 'Cantarell';
+    src: url('/assets/fonts/cantarell/Cantarell-Bold.woff2');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'jetBrains-mono';
+    src: url('/assets/fonts/jetBrains-mono/JetBrainsMono-Regular.woff2');
+}
