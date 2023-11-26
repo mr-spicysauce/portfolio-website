@@ -1,0 +1,65 @@
+.mainHeroContainer {
+    height: 100vh;
+}
+
+.mainHero {
+    display: flex;
+    padding: 128px 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    align-self: stretch;
+    position: sticky;
+    background:
+        linear-gradient(180deg, rgba(24, 26, 30, 0) 0%, #181a1e 100%),
+        url('/assets/Main2BG.png/'),
+        rgb(255, 255, 255) 50% / cover no-repeat;
+    background-size: auto, auto, cover;
+    background-size: 110%;
+}
+
+.mainHeroInner {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    gap: 16px;
+    width: 100%;
+    background-color: #1e2129;
+    background-image: url('/assets/WalkingSteadImg.png');
+    background-size: cover;
+    position: fixed;
+    z-index: 0;
+}
+
+.mainHeroInner h1 {
+    color: #ffffff;
+    text-align: center;
+    font-family: Franklin Gothic;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0px;
+}
+
+.mainHeroInner h3 {
+    color: #ffffff;
+    text-align: center;
+    font-family: Cantarell;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0px;
+}
+
+.iconsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+}
