@@ -492,7 +492,7 @@ h3 {
 .AboutMeNumbers {
     color: #a1c2a8;
     text-align: right;
-    font-family: jetBrains-mono;
+    font-family: JetBrains-mono;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -529,7 +529,7 @@ h3 {
 .AboutmeText {
     color: #d9cb8e;
     text-align: right;
-    font-family: jetBrains-mono;
+    font-family: JetBrains-mono;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -540,7 +540,7 @@ h3 {
 .AboutmeTextVar {
     color: #df6577;
     text-align: right;
-    font-family: jetBrains-mono;
+    font-family: JetBrains-mono;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -551,7 +551,7 @@ h3 {
 #AboutmeExtends {
     color: #79d5ba;
     text-align: right;
-    font-family: jetBrains-mono;
+    font-family: JetBrains-mono;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -562,7 +562,7 @@ h3 {
 .AboutmeVarName {
     color: #cdced2;
     text-align: right;
-    font-family: jetBrains-mono;
+    font-family: JetBrains-mono;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -573,7 +573,7 @@ h3 {
 .AboutMeSymbols {
     color: #a5c3f6;
     text-align: right;
-    font-family: jetBrains-mono;
+    font-family: JetBrains-mono;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -584,7 +584,7 @@ h3 {
 .AboutMeFunctionName {
     color: #5ac6dd;
     text-align: right;
-    font-family: jetBrains-mono;
+    font-family: JetBrains-mono;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -624,7 +624,7 @@ h3 {
 #GodotPrint {
     color: #9191d8;
     text-align: right;
-    font-family: jetBrains-mono;
+    font-family: JetBrains-mono;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
