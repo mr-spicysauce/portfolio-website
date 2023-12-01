@@ -29,7 +29,12 @@ export const AboutHero = () => {
                     <div className="line">
                         <div className="funcColapse" />
                         <span className="AboutmeTextVar">extends</span>
-                        <span id="AboutmeExtends">&nbsp;JackG</span>
+                        <span id="AboutmeExtends">
+                            &nbsp;
+                            {(
+                                process.env.NEXT_PUBLIC_WEBSITE_NAME || 'Jack'
+                            ).replace(/ /g, '')}
+                        </span>
                     </div>
 
                     <div className="line">

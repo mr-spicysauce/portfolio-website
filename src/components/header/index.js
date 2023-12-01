@@ -10,7 +10,7 @@ export const Header = ({ heroRef }) => {
         window.addEventListener('scroll', () => {
             const main1Viability =
                 1 - window.scrollY / (heroRef?.current?.offsetHeight - 45)
-            if (window.scrollY >= heroRef?.current?.offsetHeight - 45) {
+            if (window.scrollY >= heroRef?.current?.offsetHeight - 90) {
                 setHeaderFilled(true)
             } else {
                 setHeaderFilled(false)
@@ -31,7 +31,7 @@ export const Header = ({ heroRef }) => {
             <ContentConstraint>
                 <div className={styles.headerInner}>
                     <a className={styles.headerTitle} href="#">
-                        Jack G
+                        {process.env.NEXT_PUBLIC_WEBSITE_NAME || 'Jack'}
                     </a>
                     <div className={styles.headerLinks}>
                         <a id="HeaderButtons" href="#skills">
