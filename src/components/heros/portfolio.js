@@ -34,7 +34,7 @@ export const PortfolioHero = () => {
     }
 
     return (
-        <div className={styles.heroContainer}>
+        <div className={styles.heroContainer} id="portfolio">
             <header className={styles.overview}>
                 <div className={styles.overviewTextContent}>
                     <h1>Portfolio</h1>

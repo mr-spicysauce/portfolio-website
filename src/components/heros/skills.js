@@ -2,7 +2,7 @@ import skillsStyles from './skills.module.css'
 
 export const SkillsHero = () => {
     return (
-        <div className={skillsStyles.heroContainer}>
+        <div id="skills" className={skillsStyles.heroContainer}>
             <div className={skillsStyles.heroOverview}>
                 <h1>Skills & Tools</h1>
                 <p>

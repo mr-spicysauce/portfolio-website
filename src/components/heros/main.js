@@ -1,5 +1,7 @@
+import { useEffect } from 'react'
 import { IconButton } from '../button/iconButton'
 import mainHeroStyles from './main.module.css'
+import { output } from '../../../next.config'
 
 export const MainHero = ({ takeRef }) => {
     return (

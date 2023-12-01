@@ -33,6 +33,7 @@
     background-size: cover;
     position: fixed;
     z-index: 0;
+    opacity: 1;
 }
 
 .mainHeroInner h1 {

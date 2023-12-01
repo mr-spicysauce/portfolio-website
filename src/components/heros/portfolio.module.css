@@ -16,7 +16,6 @@
     justify-content: center;
     align-items: center;
     width: 782px;
-    height: 636px;
     gap: 48px;
 }
 
@@ -135,6 +134,7 @@
     font-weight: 500;
     line-height: normal;
     margin: 0%;
+    height: 56px;
 }
 
 .itemContentSectionHeader {

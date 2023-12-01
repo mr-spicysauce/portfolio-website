@@ -16,6 +16,7 @@
     position: absolute;
     z-index: -1;
     transition: transform 0.15s ease-in;
+    border-bottom: 1px solid rgba(122, 122, 122, 0.2);
 }
 
 .inactive::before {
@@ -62,6 +63,7 @@
     font-weight: 400;
     line-height: normal;
     white-space: nowrap;
+    text-decoration: none;
 }
 
 #HeaderSpacer {
