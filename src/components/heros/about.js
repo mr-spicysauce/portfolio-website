@@ -19,7 +19,7 @@ export const AboutHero = () => {
             </header>
             <div id="Main4Content">
                 <div id="AboutMeNumbersHolder">
-                    {Array(30)
+                    {Array(29)
                         .fill()
                         .map((_, i) => (
                             <h4 className="AboutMeNumbers">{i + 1}</h4>
