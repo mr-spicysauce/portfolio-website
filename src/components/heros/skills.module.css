@@ -5,7 +5,7 @@
             rgba(24, 26, 30, 0) 0%,
             #181a1e 100%
         ),
-        url('/assets/Main2BG.png/');
+        url('/assets/Main2BG.webp');
     display: flex;
     padding: 128px 0px;
     flex-direction: column;
@@ -14,13 +14,8 @@
     gap: 32px;
     align-self: stretch;
     position: sticky;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
-
-    /* background:
-        linear-gradient(180deg, rgba(24, 26, 30, 0) 0%, #181a1e 100%),
-        rgb(255, 255, 255) 50% / cover no-repeat; */
-    background-size: 110%;
 }
 
 .heroOverview h1 {
