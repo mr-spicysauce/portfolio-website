@@ -8,6 +8,7 @@
     gap: 96px;
     align-self: stretch;
     position: sticky;
+    width: 100%;
 }
 
 .overview {
@@ -15,7 +16,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 782px;
     gap: 48px;
 }
 
@@ -135,7 +135,6 @@
     font-weight: 500;
     line-height: normal;
     margin: 0%;
-    height: 56px;
 }
 
 .itemContentSectionHeader {
@@ -171,7 +170,6 @@
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    height: 186px;
     align-self: stretch;
     margin: 0%;
     text-align: left;

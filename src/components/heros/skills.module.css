@@ -16,6 +16,7 @@
     position: sticky;
     background-size: cover;
     background-repeat: no-repeat;
+    width: 100%;
 }
 
 .heroOverview h1 {

@@ -11,9 +11,9 @@ export const PortfolioHero = () => {
             tools: ['Godot', 'Blender'],
             timeSpent: '2 months',
             images: ['/assets/WalkingSteadImg.png'],
-            roles: ['Project Lead', 'Solo Developer', 'Environment Builder'],
+            roles: ['Project Lead', 'Solo Developer'],
             description:
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque dui id tellus luctus porta et a metus. Duis porttitor lectus ex, eu laoreet justo euismod viverra. Aliquam eu erat ultrices, venenatis dolor sed, auctor purus. Sed eget felis metus. Aenean mattis.',
+                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque dui id tellus luctus porta et a metus. Duis porttitor lectus ex, eu laoreet justo euismod viverra.',
         },
         'VR Aim Trainer': {
             tools: ['Godot', 'Blender', 'Figma'],
@@ -21,7 +21,7 @@ export const PortfolioHero = () => {
             images: ['/assets/VRaim.png'],
             roles: ['Solo Developer'],
             description:
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque dui id tellus luctus porta et a metus. Duis porttitor lectus ex, eu laoreet justo euismod viverra. Aliquam eu erat ultrices, venenatis dolor sed, auctor purus. Sed eget felis metus. Aenean mattis.',
+                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque dui id tellus luctus porta et a metus. Duis porttitor lectus ex, eu laoreet justo euismod viverra.',
         },
         'Dungeon Resurgence': {
             tools: ['Godot', 'Blender'],
@@ -29,7 +29,7 @@ export const PortfolioHero = () => {
             images: ['/assets/DungeonImg.png'],
             roles: ['Solo Developer'],
             description:
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque dui id tellus luctus porta et a metus. Duis porttitor lectus ex, eu laoreet justo euismod viverra. Aliquam eu erat ultrices, venenatis dolor sed, auctor purus. Sed eget felis metus. Aenean mattis.',
+                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque dui id tellus luctus porta et a metus. Duis porttitor lectus ex, eu laoreet justo euismod viverra.',
         },
     }
 
