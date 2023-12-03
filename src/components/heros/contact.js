@@ -23,10 +23,10 @@ export const ContactHero = () => {
                     <div className={ContactStyles.sideLine} />
                     <div id={ContactStyles.discordTitleHolder}>
                         <ContactDiscordIcon />
-                        <h2 className={ContactStyles.contactText}>
+                        <span className={ContactStyles.contactText}>
                             Discord:&nbsp;
                             {process.env.NEXT_PUBLIC_DISCORD || 'username'}
-                        </h2>
+                        </span>
                     </div>
                     <GodotEye />
                 </div>
@@ -37,11 +37,11 @@ export const ContactHero = () => {
                     <div className={ContactStyles.sideLine} />
                     <div id={ContactStyles.discordTitleHolder}>
                         <ContactEmailIcon />
-                        <h2 className={ContactStyles.contactText}>
+                        <span className={ContactStyles.contactText}>
                             Email:&nbsp;
                             {process.env.NEXT_PUBLIC_EMAIL ||
                                 'temp_email@temp.com'}
-                        </h2>
+                        </span>
                     </div>
                     <GodotEye />
                 </div>

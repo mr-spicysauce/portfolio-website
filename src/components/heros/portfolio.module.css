@@ -21,7 +21,6 @@
 
 .overviewTextContent {
     display: flex;
-    width: 550px;
     padding: 0px 16px;
     flex-direction: column;
     justify-content: center;
@@ -62,7 +61,8 @@
 
 .item {
     display: flex;
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
     padding: 24px;
     height: 100%;
     flex-direction: column;

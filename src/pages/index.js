@@ -6,6 +6,7 @@ import { SkillsHero } from '@/components/heros/skills'
 import { PortfolioHero } from '@/components/heros/portfolio'
 import { ContactHero } from '@/components/heros/contact'
 import { AboutHero } from '@/components/heros/about'
+import { FooterHero } from '@/components/heros/footer'
 import Head from 'next/head'
 
 export default function Home() {
@@ -25,6 +26,7 @@ export default function Home() {
             <PortfolioHero />
             <AboutHero />
             <ContactHero />
+            <FooterHero />
         </>
     )
 }

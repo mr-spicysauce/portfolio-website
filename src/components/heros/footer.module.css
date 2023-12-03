@@ -1,0 +1,23 @@
+#footerMain {
+    display: flex;
+    padding: 64px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+    border-top: 1px solid #7a7a7aa9;
+    background: #181a1e;
+    position: sticky;
+}
+
+#copyrightText {
+    color: #8a8a8a;
+    text-align: center;
+    font-family: Cantarell;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0%;
+}
