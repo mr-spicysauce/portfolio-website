@@ -28,7 +28,8 @@ export const FooterHero = () => {
             </div>
 
             <span id={FooterStyles.copyrightText}>
-                ©{process.env.NEXT_PUBLIC_WEBSITE_NAME || 'Jack'}
+                ©&nbsp;{new Date().getFullYear()}&nbsp;
+                {process.env.NEXT_PUBLIC_WEBSITE_NAME || 'Jack'}
             </span>
         </div>
     )
