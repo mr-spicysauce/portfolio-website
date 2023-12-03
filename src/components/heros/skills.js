@@ -24,8 +24,8 @@ export const SkillsHero = () => {
                 </SkillsItem>
 
                 <SkillsItem name="Blender" imageSrc="/assets/BlenderIcon.png">
-                    Basic 3D modelling <br />
-                    Basic Animating <br />
+                    Simple 3D modelling <br />
+                    Simple Animating <br />
                     Cycles and Eevee rendering
                 </SkillsItem>
 
@@ -33,8 +33,9 @@ export const SkillsHero = () => {
                     name="Unreal Engine"
                     imageSrc="/assets/UnrealEngineIcon.png"
                 >
-                    Learning basics of Unreal <br />
-                    Learning basic C++
+                    Learning Unreal Engine
+                    <br />
+                    Learning C++
                 </SkillsItem>
 
                 <SkillsItem name="Figma" imageSrc="/assets/FigmaIcon.png">
