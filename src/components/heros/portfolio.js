@@ -13,7 +13,7 @@ export const PortfolioHero = () => {
             images: ['/assets/WalkingSteadImg.png'],
             roles: ['Project Lead', 'Solo Developer'],
             description:
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque dui id tellus luctus porta et a metus. Duis porttitor lectus ex, eu laoreet justo euismod viverra.',
+                'The walking stead was the first group project I ever worked on. Its a fan game based on Project Zomboid, which we made our own story/lore when we played it and made this game around it.',
         },
         'VR Aim Trainer': {
             tools: ['Godot', 'Blender', 'Figma'],
@@ -21,7 +21,7 @@ export const PortfolioHero = () => {
             images: ['/assets/VRaim.png'],
             roles: ['Solo Developer'],
             description:
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque dui id tellus luctus porta et a metus. Duis porttitor lectus ex, eu laoreet justo euismod viverra.',
+                'There where no good VR aim trainer on steam, I set out to make my own to learn the challenges of VR development. I hope to release on itch.io soon and make a YouTube video documenting it.',
         },
         'Dungeon Resurgence': {
             tools: ['Godot', 'Blender'],
@@ -29,7 +29,7 @@ export const PortfolioHero = () => {
             images: ['/assets/DungeonImg.png'],
             roles: ['Solo Developer'],
             description:
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque dui id tellus luctus porta et a metus. Duis porttitor lectus ex, eu laoreet justo euismod viverra.',
+                'Dungeon Resurgence was my first full game I made for my college assignment. This my first time developing a games from start to finish while documenting every aspect of it.',
         },
     }
 
