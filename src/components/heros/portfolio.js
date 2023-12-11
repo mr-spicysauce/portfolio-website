@@ -44,16 +44,16 @@ export const PortfolioHero = () => {
                     </p>
                 </div>
 
-                {
-                    <div className="VideoEmbed">
-                        <iframe
-                            className="VideoEmbed"
-                            src="https://www.youtube.com/embed/45csSEotJY8?si=J2XOUKWezHfHJ3bO"
-                            title="YouTube video"
-                            allowFullScreen
-                        />
-                    </div>
-                }
+                <div className="ratio ratio-16x9">
+                    <iframe
+                        width="560"
+                        height="315"
+                        className="VideoEmbed"
+                        src="https://www.youtube.com/embed/45csSEotJY8?si=J2XOUKWezHfHJ3bO"
+                        title="YouTube video"
+                        allowFullScreen
+                    />
+                </div>
             </header>
             <div className={styles.itemContainer}>
                 {Object.keys(portfolioItems).map((key, index) => {
