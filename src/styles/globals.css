@@ -426,13 +426,16 @@ h3 {
 .VideoEmbed {
     width: 100%;
     height: 100%;
-    max-width: 800px;
+    max-width: 640px;
+    max-height: 480px;
 }
 
 .VideoEmbed iframe {
     width: 100%;
     height: 100%;
     border: none;
+    max-width: 640px;
+    max-height: 480px;
 }
 
 .about {
@@ -650,4 +653,8 @@ h3 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+#DownArrow {
+    transform: rotate(-90deg);
 }

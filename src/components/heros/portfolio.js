@@ -44,13 +44,16 @@ export const PortfolioHero = () => {
                     </p>
                 </div>
 
-                {/* <div className="VideoEmbed">
-                    <iframe
-                                src="https://www.youtube.com/embed/xj3SZv5lle4?si=5ipg063tolte4QAH"
-                                title="YouTube video"
-                                allowFullScreen
-                            />
-                </div> */}
+                {
+                    <div className="VideoEmbed">
+                        <iframe
+                            className="VideoEmbed"
+                            src="https://www.youtube.com/embed/45csSEotJY8?si=J2XOUKWezHfHJ3bO"
+                            title="YouTube video"
+                            allowFullScreen
+                        />
+                    </div>
+                }
             </header>
             <div className={styles.itemContainer}>
                 {Object.keys(portfolioItems).map((key, index) => {
@@ -92,11 +95,6 @@ const PortfolioItem = ({
             <h1>{name}</h1>
             <div className={styles.itemImageCarousel}>
                 <img src={imageSrcArray[0]} className={styles.itemImage}></img>
-                <div className={styles.itemImageSelector}>
-                    {[...Array(5)].map(() => (
-                        <div className="ellipse"></div>
-                    ))}
-                </div>
             </div>
 
             <div className={styles.itemContent}>
@@ -134,7 +132,7 @@ const PortfolioItem = ({
                     <h3 className="PortfolioItemContentSectionHeadertext">
                         Read more
                     </h3>
-                    <DownArrow></DownArrow>
+                    <DownArrow />
                 </button>
             </div>
         </div>
