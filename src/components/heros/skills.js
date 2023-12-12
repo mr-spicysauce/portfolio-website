@@ -47,11 +47,11 @@ export const SkillsHero = ({ takeRef }) => {
     )
 }
 
-const SkillsItem = ({ imageSrc, skillName, children }) => {
+const SkillsItem = ({ imageSrc, name, children }) => {
     return (
         <div className="skillsItem">
             <img className="skillsImage" src={imageSrc}></img>
-            <h2 className="skillsItemHeader">{skillName}</h2>
+            <h2 className="skillsItemHeader">{name}</h2>
             <div>
                 <p className="MainSubtext">{children}</p>
             </div>

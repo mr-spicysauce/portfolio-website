@@ -8,7 +8,7 @@ export const MainHero = ({ takeRef }) => {
         <div ref={takeRef} className={mainHeroStyles.mainHeroContainer}>
             <div className={mainHeroStyles.mainHeroInner}>
                 <h1>{process.env.NEXT_PUBLIC_WEBSITE_NAME || 'Jack'}</h1>
-                <h3>Game developer & Programmer</h3>
+                <h3>Game Developer and Programmer</h3>
                 <div className={mainHeroStyles.iconsContainer}>
                     <IconButton
                         href="https://github.com/mr-spicysauce"

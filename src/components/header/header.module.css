@@ -6,7 +6,9 @@
     box-sizing: border-box;
     top: 0;
     z-index: 9999;
-    transition: background-color 0.05s ease-in;
+    transition:
+        background-color 0.05s ease-in,
+        backdrop-filter 0.15s ease-in;
 }
 
 .header::before {
@@ -22,6 +24,10 @@
 
 .inactive::before {
     transform: translateY(-72px);
+}
+
+.inactive {
+    backdrop-filter: blur(1px);
 }
 
 .active::before {
@@ -53,7 +59,7 @@
     color: #fff;
     text-align: center;
     font-family: Cantarell;
-    font-size: 22px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;

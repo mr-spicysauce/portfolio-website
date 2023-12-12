@@ -1,42 +1,11 @@
 import styles from './portfolio.module.css'
-import ToolIcon from '@/assets/SVG/Tool'
 import DownArrow from '@/assets/SVG/DownArrow'
-import TimeIcon from '@/assets/SVG/Time'
-import RoleIcon from '@/assets/SVG/Roles'
 import { ContentConstraint } from '../constraints/content'
 import Link from 'next/link'
+import { projects } from '../../data/projects'
+import { PortfolioAttributes } from './portfolio-attributes'
 
-export const PortfolioHero = () => {
-    const portfolioItems = {
-        'The Walking Stead': {
-            tools: ['Godot', 'Blender'],
-            timeSpent: '2 months',
-            images: ['/assets/WalkingSteadImg.png'],
-            roles: ['Project Lead', 'Solo Developer'],
-            description:
-                'The walking stead was the first group project I ever worked on. Its a fan game based on Project Zomboid, which we made our own story/lore when we played it and made this game around it.',
-            href: '/projects/the-walking-stead',
-        },
-        'VR Aim Trainer': {
-            tools: ['Godot', 'Blender', 'Figma'],
-            timeSpent: '1 month',
-            images: ['/assets/VRaim.png'],
-            roles: ['Solo Developer'],
-            description:
-                'There where no good VR aim trainer on steam, I set out to make my own to learn the challenges of VR development. I hope to release on itch.io soon and make a YouTube video documenting it.',
-            href: '/projects/vr-aim-trainer',
-        },
-        'Dungeon Resurgence': {
-            tools: ['Godot', 'Blender'],
-            timeSpent: '3 weeks',
-            images: ['/assets/DungeonImg.png'],
-            roles: ['Solo Developer'],
-            description:
-                'Dungeon Resurgence was my first full game I made for my college assignment. This my first time developing a games from start to finish while documenting every aspect of it.',
-            href: '/projects/dungeon-resurgence',
-        },
-    }
-
+export const PortfolioHero = ({ projects }) => {
     return (
         <div className={styles.heroContainer} id="portfolio">
             <header className={styles.overview}>
@@ -44,7 +13,7 @@ export const PortfolioHero = () => {
                     <h1>Portfolio</h1>
                     <p>
                         A showcase of both current and previous projects <br />
-                        that highlights my experience developing games
+                        that highlights my experience developing games.
                     </p>
                 </div>
 
@@ -58,26 +27,12 @@ export const PortfolioHero = () => {
                 </div>
             </header>
             <div className={styles.itemContainer}>
-                {Object.keys(portfolioItems).map((key, index) => {
-                    const value = portfolioItems[key]
-
-                    const name = key
-                    const timeSpent = value.timeSpent
-                    const roles = value.roles.join(', ')
-                    const tools = value.tools.join(', ')
-                    const description = value.description
-                    const images = value.images
-                    const href = value.href
-
+                {projects.map((project) => {
                     return (
                         <PortfolioItem
-                            name={name}
-                            timeSpent={timeSpent}
-                            tools={tools}
-                            roles={roles}
-                            description={description}
-                            imageSrcArray={images}
-                            href={href}
+                            key={project.id}
+                            {...project}
+                            href={`/projects/${project.id}`}
                         />
                     )
                 })}
@@ -86,9 +41,9 @@ export const PortfolioHero = () => {
     )
 }
 
-const PortfolioItem = ({
+export const PortfolioItem = ({
     name,
-    imageSrcArray,
+    images,
     tools,
     timeSpent,
     roles,
@@ -96,36 +51,18 @@ const PortfolioItem = ({
     href,
 }) => {
     return (
-        <div className={styles.item}>
+        <Link className={styles.item} href={href}>
             <h1>{name}</h1>
             <div className={styles.itemImageCarousel}>
-                <img src={imageSrcArray[0]} className={styles.itemImage}></img>
+                <img src={images[0]} className={styles.itemImage}></img>
             </div>
 
             <div className={styles.itemContent}>
-                <div className={styles.itemContentSection}>
-                    <header className={styles.itemContentSectionHeader}>
-                        <ToolIcon></ToolIcon>
-                        <h3>Tools:</h3>
-                    </header>
-                    <p>{tools}</p>
-                </div>
-
-                <div className={styles.itemContentSection}>
-                    <header className={styles.itemContentSectionHeader}>
-                        <TimeIcon></TimeIcon>
-                        <h3>Time Spent:</h3>
-                    </header>
-                    <p>{timeSpent}</p>
-                </div>
-
-                <div className={styles.itemContentSection}>
-                    <header className={styles.itemContentSectionHeader}>
-                        <RoleIcon></RoleIcon>
-                        <h3>Roles:</h3>
-                    </header>
-                    <p>{roles}</p>
-                </div>
+                <PortfolioAttributes
+                    tools={tools}
+                    timeSpent={timeSpent}
+                    roles={roles}
+                />
 
                 <div className={styles.itemContentSection}>
                     <div className={styles.itemDescriptionContainer}>
@@ -133,13 +70,13 @@ const PortfolioItem = ({
                     </div>
                 </div>
 
-                <Link className={styles.readMoreButton} href={href}>
+                <div className={styles.readMoreButton}>
                     <h3 className="PortfolioItemContentSectionHeadertext">
                         Read more
                     </h3>
                     <DownArrow />
-                </Link>
+                </div>
             </div>
-        </div>
+        </Link>
     )
 }

@@ -8,8 +8,9 @@ import { ContactHero } from '@/components/heros/contact'
 import { AboutHero } from '@/components/heros/about'
 import { FooterHero } from '@/components/heros/footer'
 import Head from 'next/head'
+import { getAllProjectData } from '@/data/projects'
 
-export default function Home() {
+export default function Home({ projects }) {
     const main1Ref = useRef()
 
     return (
@@ -31,10 +32,19 @@ export default function Home() {
             />
             <MainHero takeRef={main1Ref} />
             <SkillsHero />
-            <PortfolioHero />
+            <PortfolioHero projects={projects} />
             <AboutHero />
             <ContactHero />
-            <FooterHero />
         </>
     )
+}
+
+export async function getStaticProps() {
+    const projects = await getAllProjectData()
+
+    return {
+        props: {
+            projects,
+        },
+    }
 }

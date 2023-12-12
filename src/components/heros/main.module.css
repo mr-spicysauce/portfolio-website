@@ -64,3 +64,11 @@
     align-items: center;
     gap: 18px;
 }
+
+.iconsContainer a {
+    transition: opacity 0.15s ease-in;
+}
+
+.iconsContainer a:hover {
+    opacity: 0.5;
+}

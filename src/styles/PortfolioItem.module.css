@@ -7,7 +7,7 @@
             rgba(24, 26, 30, 0) 0%,
             #181a1e 100%
         ),
-        url('/assets/Main2BG.webp');
+        white;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -26,6 +26,7 @@
     align-items: flex-start;
     gap: 36px;
     align-self: stretch;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .TitleHolder {
@@ -60,19 +61,11 @@
     display: flex;
     padding-bottom: 64px;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     gap: 36px;
-    align-self: stretch;
-}
-
-.PortfolioItem {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.MaincontentText {
+    width: calc(100% - 16px * 2);
+    padding: 64px 16px;
+    padding-top: 16px;
+    max-width: 900px;
     color: #fff;
     text-align: justify;
     font-family: Cantarell;
@@ -80,8 +73,28 @@
     font-style: normal;
     font-weight: 500;
     line-height: 30px;
-    max-width: 900px;
+}
+
+.MainContent p {
+    margin: 0;
+}
+
+.MainContent img {
     width: 100%;
+    border-radius: 12px;
+    transition: box-shadow 0.15s ease-in;
+    cursor: pointer;
+}
+
+.MainContent img:hover {
+    box-shadow: 0px 0px 0px 4px rgba(255, 255, 255, 0.25);
+}
+
+.PortfolioItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .LargeImage {
@@ -90,4 +103,39 @@
     width: 100%;
     max-height: 540px;
     height: 100%;
+}
+
+.ImageDialog[open] {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: #181a1e;
+    padding: 0;
+    border-radius: 12px;
+    border: 2px solid rgba(255, 255, 255, 0.25);
+    max-width: 80vw;
+}
+
+.ImageDialog img {
+    max-width: 100%;
+}
+
+.ImageDialog[open]::backdrop {
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.ImageDialogClose {
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    height: 48px;
+    width: 48px;
+    transition: opacity 0.15s ease-in;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.ImageDialogClose:hover {
+    opacity: 0.5;
 }
