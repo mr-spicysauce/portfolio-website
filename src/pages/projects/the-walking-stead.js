@@ -1,3 +1,4 @@
+import { useRef } from 'react'
 import { FooterHero } from '@/components/heros/footer'
 import PortfolioItemStyle from '@/styles/PortfolioItem.module.css'
 import styles from '@/components/heros/portfolio.module.css'
@@ -6,16 +7,29 @@ import ToolIcon from '@/assets/SVG/Tool'
 import TimeIcon from '@/assets/SVG/Time'
 import RoleIcon from '@/assets/SVG/Roles'
 
-import Header from '@/components/header/PortfolioItemHeader'
+import { Header } from '@/components/header'
 
 export default function Home() {
+    const titleHolderRef = useRef()
+
     return (
         <>
-            <Header />
+            <Header
+                scrollRef={titleHolderRef}
+                links={[
+                    { name: 'Intro', href: '#intro' },
+                    { name: 'Screenshots', href: '#screenshots' },
+                    { name: 'What I learnt', href: '#what-i-learned' },
+                    { name: 'Conclusion', href: '#conclusion' },
+                ]}
+            />
             <div className={PortfolioItemStyle.PortfolioItem}>
                 <div className={PortfolioItemStyle.Main1}>
                     <div className={PortfolioItemStyle.Main1Holder}>
-                        <div className={PortfolioItemStyle.TitleHolder}>
+                        <div
+                            className={PortfolioItemStyle.TitleHolder}
+                            ref={titleHolderRef}
+                        >
                             <h1 className={PortfolioItemStyle.TitleText}>
                                 Title Of Game
                             </h1>

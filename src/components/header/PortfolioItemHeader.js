@@ -9,3 +9,10 @@ export default function Header() {
         </header>
     )
 }
+{
+    /*
+
+I am gonna let you do some things I gotta get writing my game docs and gettings screenshots :skull:
+ok
+*/
+}

@@ -1,8 +1,8 @@
 import skillsStyles from './skills.module.css'
 
-export const SkillsHero = () => {
+export const SkillsHero = ({ takeRef }) => {
     return (
-        <div id="skills" className={skillsStyles.heroContainer}>
+        <div ref={takeRef} id="skills" className={skillsStyles.heroContainer}>
             <div className={skillsStyles.heroOverview}>
                 <h1>Skills & Tools</h1>
                 <p>

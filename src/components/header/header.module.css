@@ -52,6 +52,7 @@
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+    white-space: nowrap;
 }
 
 .headerTitle {
@@ -81,5 +82,13 @@
     width: 100%;
     padding-top: 10px;
     padding-bottom: 10px;
+    padding-left: 28px;
+    padding-right: 28px;
     gap: 16px;
+}
+
+@media only screen and (max-width: 900px) {
+    .headerLinks {
+        display: none;
+    }
 }

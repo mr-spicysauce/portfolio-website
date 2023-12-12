@@ -20,7 +20,15 @@ export default function Home() {
                         'Portfolio Website'}
                 </title>
             </Head>
-            <Header heroRef={main1Ref} />
+            <Header
+                heroRef={main1Ref}
+                links={[
+                    { name: 'Skills', href: '#skills' },
+                    { name: 'Portfolio', href: '#portfolio' },
+                    { name: 'About', href: '#about' },
+                    { name: 'Contact', href: '#contact' },
+                ]}
+            />
             <MainHero takeRef={main1Ref} />
             <SkillsHero />
             <PortfolioHero />
