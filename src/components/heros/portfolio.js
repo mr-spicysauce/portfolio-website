@@ -53,6 +53,7 @@ export const PortfolioHero = () => {
                         src="https://www.youtube.com/embed/45csSEotJY8?si=J2XOUKWezHfHJ3bO"
                         title="YouTube video"
                         allowFullScreen
+                        frameborder="0"
                     />
                 </div>
             </header>
@@ -67,8 +68,6 @@ export const PortfolioHero = () => {
                     const description = value.description
                     const images = value.images
                     const href = value.href
-
-                    console.log(value)
 
                     return (
                         <PortfolioItem
