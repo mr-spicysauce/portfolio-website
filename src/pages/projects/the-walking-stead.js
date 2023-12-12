@@ -6,9 +6,12 @@ import ToolIcon from '@/assets/SVG/Tool'
 import TimeIcon from '@/assets/SVG/Time'
 import RoleIcon from '@/assets/SVG/Roles'
 
+import Header from '@/components/header/PortfolioItemHeader'
+
 export default function Home() {
     return (
         <>
+            <Header />
             <div className={PortfolioItemStyle.PortfolioItem}>
                 <div className={PortfolioItemStyle.Main1}>
                     <div className={PortfolioItemStyle.Main1Holder}>
@@ -55,8 +58,41 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
+
                 <div className={PortfolioItemStyle.MainContent}>
-                    <h1>HELLO</h1>
+                    <p
+                        className={PortfolioItemStyle.MaincontentText}
+                        id="intro"
+                    >
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Nam tristique sodales ornare. Morbi sodales arcu a
+                        tellus finibus, vel vulputate odio aliquet. Aliquam sem
+                        eros, pharetra in lorem quis, pulvinar mollis purus.
+                        Vestibulum vel sapien ac quam tempus elementum id sit
+                        amet tortor. Nullam tortor turpis, porta ut metus ut,
+                        porta varius tortor. Morbi nec placerat lacus. Quisque
+                        finibus tempor lectus sit amet facilisis. Aenean sit
+                        amet elementum felis, ac condimentum dui. Duis gravida
+                        egestas dapibus. Aenean vulputate ultricies sapien, quis
+                        euismod enim ullamcorper nec.
+                        <br />
+                        <br />
+                        In ultrices tortor sit amet tellus tincidunt, id
+                        accumsan urna rutrum. Nullam lorem leo, porta in
+                        hendrerit ut, sagittis eget enim. Aliquam erat volutpat.
+                        In volutpat, augue in consectetur commodo, nunc lacus
+                        scelerisque mi, vel sagittis arcu velit sed leo.
+                        Suspendisse vel dui eu dolor faucibus viverra. Phasellus
+                        ultricies dictum enim, facilisis hendrerit nulla
+                        tristique at. Nam aliquam ex et est gravida, lacinia
+                        varius leo aliquam. Sed eu finibus tortor. Suspendisse
+                        nisi nunc, varius sit amet luctus sit amet, rutrum ac
+                        tortor.
+                    </p>
+                    <img
+                        className={PortfolioItemStyle.LargeImage}
+                        src={'/assets/WalkingSteadTestImage1.png'}
+                    />
                 </div>
                 <FooterHero />
             </div>
