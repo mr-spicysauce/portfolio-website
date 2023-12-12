@@ -14,6 +14,7 @@ export const PortfolioHero = () => {
             roles: ['Project Lead', 'Solo Developer'],
             description:
                 'The walking stead was the first group project I ever worked on. Its a fan game based on Project Zomboid, which we made our own story/lore when we played it and made this game around it.',
+            href: ['/projects/the-walking-stead'],
         },
         'VR Aim Trainer': {
             tools: ['Godot', 'Blender', 'Figma'],
@@ -22,6 +23,7 @@ export const PortfolioHero = () => {
             roles: ['Solo Developer'],
             description:
                 'There where no good VR aim trainer on steam, I set out to make my own to learn the challenges of VR development. I hope to release on itch.io soon and make a YouTube video documenting it.',
+            href: ['/projects/vr-aim-trainer'],
         },
         'Dungeon Resurgence': {
             tools: ['Godot', 'Blender'],
@@ -30,6 +32,7 @@ export const PortfolioHero = () => {
             roles: ['Solo Developer'],
             description:
                 'Dungeon Resurgence was my first full game I made for my college assignment. This my first time developing a games from start to finish while documenting every aspect of it.',
+            href: ['/projects/dungeon-resurgence'],
         },
     }
 
@@ -43,12 +46,11 @@ export const PortfolioHero = () => {
                         that highlights my experience developing games
                     </p>
                 </div>
-
-                <div className="ratio ratio-16x9">
+                {/*
+                Ejaz broke this and Kieran fixed it or somthing. Its working now :)
+                 */}
+                <div className="VideoEmbed">
                     <iframe
-                        width="560"
-                        height="315"
-                        className="VideoEmbed"
                         src="https://www.youtube.com/embed/45csSEotJY8?si=J2XOUKWezHfHJ3bO"
                         title="YouTube video"
                         allowFullScreen
@@ -65,6 +67,7 @@ export const PortfolioHero = () => {
                     const tools = value.tools.join(', ')
                     const description = value.description
                     const images = value.images
+                    const href = value.href
 
                     return (
                         <PortfolioItem
@@ -74,6 +77,7 @@ export const PortfolioHero = () => {
                             roles={roles}
                             description={description}
                             imageSrcArray={images}
+                            href={href}
                         />
                     )
                 })}
@@ -89,6 +93,7 @@ const PortfolioItem = ({
     timeSpent,
     roles,
     description,
+    href,
 }) => {
     return (
         <div className={styles.item}>
@@ -128,12 +133,12 @@ const PortfolioItem = ({
                     </div>
                 </div>
 
-                <button className={styles.readMoreButton}>
+                <a className={styles.readMoreButton} href={href}>
                     <h3 className="PortfolioItemContentSectionHeadertext">
                         Read more
                     </h3>
                     <DownArrow />
-                </button>
+                </a>
             </div>
         </div>
     )
