@@ -2,7 +2,7 @@ import axios from 'axios'
 
 export default async function getCurrentlyScrobbling(req, res) {
     if (!process.env.LAST_FM_API_KEY) {
-        console.log('No LASTFM_API_KEY supplied!')
+        console.log('No LAST_FM_API_KEY supplied!')
 
         return res.status(500).json({
             ok: false,
