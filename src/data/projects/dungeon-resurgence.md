@@ -5,11 +5,20 @@ tools: ['Godot', 'Blender']
 timeSpent: '3 weeks'
 images: ['/assets/DungeonImg.png']
 roles: ['Solo Developer']
-description: 'Dungeon Resurgence was my first full game I made for my college assignment. This my first time developing a games from start to finish while documenting every aspect of it.'
+description: 'A full game made for a college assignment which is fully documented.'
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tristique sodales ornare. Morbi sodales arcu a tellus finibus, vel vulputate odio aliquet. Aliquam sem eros, pharetra in lorem quis, pulvinar mollis purus. Vestibulum vel sapien ac quam tempus elementum id sit amet tortor. Nullam tortor turpis, porta ut metus ut, porta varius tortor. Morbi nec placerat lacus. Quisque finibus tempor lectus sit amet facilisis. Aenean sit amet elementum felis, ac condimentum dui. Duis gravida egestas dapibus. Aenean vulputate ultricies sapien, quis euismod enim ullamcorper nec.
+Dungen Resurgence was the first game I made from start to finish complete with design documents, test plans and community feedback. This was part of my IT level 3 course at college in which I achieved a distinction. I have attached a PDF with my entire 27-page assignment for you to view as that would contain all the information about it. I have also linked the GitHub page where you can download the game and look at all the code I wrote for the game.
 
-In ultrices tortor sit amet tellus tincidunt, id accumsan urna rutrum. Nullam lorem leo, porta in hendrerit ut, sagittis eget enim. Aliquam erat volutpat. In volutpat, augue in consectetur commodo, nunc lacus scelerisque mi, vel sagittis arcu velit sed leo. Suspendisse vel dui eu dolor faucibus viverra. Phasellus ultricies dictum enim, facilisis hendrerit nulla tristique at. Nam aliquam ex et est gravida, lacinia varius leo aliquam. Sed eu finibus tortor. Suspendisse nisi nunc, varius sit amet luctus sit amet, rutrum ac tortor.
+[View the PDF here](/assets/8.2GameDev.pdf)
 
-![Describe what is in this image](/assets/VRaim.png)
+[View the GitHub page here](https://github.com/mr-spicysauce/Dungeon-Resurgence)
+
+This is some game play footage from the final release of the game.
+
+<iframe
+    src="https://www.youtube.com/embed/XPTWFq4Mfoo?si=LbICtv0CcdTYPfZg"
+    title="YouTube video"
+    allowFullScreen
+    frameborder="0"
+></iframe>
