@@ -70,10 +70,12 @@ export default function Project({ projects, project }) {
             <Header
                 scrollRef={titleHolderRef}
                 links={[
+                    {
+                        /*
                     { name: 'Intro', href: '#intro' },
                     { name: 'Screenshots', href: '#screenshots' },
-                    { name: 'What I learnt', href: '#what-i-learned' },
-                    { name: 'Conclusion', href: '#conclusion' },
+                */
+                    },
                 ]}
             />
             <div className={PortfolioItemStyle.PortfolioItem}>
