@@ -18,7 +18,7 @@ I come from a fairly competitive background playing a lot of CS2, Overwatch 2 an
     frameborder="0"
 ></iframe>
 
-I had never made any VR games before and I didn't know how well godot could handel VR but to my surprise it was worked very well. Thankfully a lot of the work had been done by the Godot Open-XR team which had all the boilerplate code ready and worked right out the box with loads of documentation. Within my first day I already had a MVP of the game and in this video you can see me messing around and testing it out.
+I had never made any VR games before and I didn't know how well godot could handel VR but to my surprise it was worked very well. Thankfully a lot of the work had been done by the [Godot Open-XR](https://github.com/GodotVR/godot_openxr) team which had all the boilerplate code ready and worked right out the box with loads of documentation. Within my first day I already had a MVP of the game and in this video you can see me messing around and testing it out.
 
 I had made a handful of traditional 3D games so some of my skills would translate to VR game development but I was faced with a handful of issues so far. The biggest issue is making a good GUI for the game as I had to take into account they can't just take off their headset to use a keyboard and mouse and had to design it so you could physically point and click.
 
