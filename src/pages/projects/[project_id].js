@@ -13,6 +13,8 @@ import { getAllProjectData, getAllProjectIds } from '@/data/projects'
 
 import CloseIcon from '@/assets/SVG/CloseIcon'
 
+import Head from 'next/head'
+
 export async function getStaticProps({ params }) {
     const projectData = await getAllProjectData()
 
@@ -57,6 +59,14 @@ export default function Project({ projects, project }) {
 
     return project ? (
         <>
+            <Head>
+                <title>
+                    {`${project.name} - ${
+                        process.env.NEXT_PUBLIC_WEBSITE_NAME ||
+                        'Portfolio Website'
+                    }`}
+                </title>
+            </Head>
             <Header
                 scrollRef={titleHolderRef}
                 links={[
