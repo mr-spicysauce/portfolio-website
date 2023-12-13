@@ -24,7 +24,7 @@ In its current state The Walking Stead has a fairly large 1st level and fully wo
 </iframe>
 This is a video from our last play test showing the state of the game and us just having fun playing it.
 
-![Describe what is in this image](/assets/DelsteadmanEarlyScreenshot.png)
+![Describe what is in this image](/assets/DelsteadmanEarlyScreenshot.PNG)
 This is a screenshot of the early development when I was setting up the multiplayer networking and GUI.
 
 ![Describe what is in this image](/assets/DelsteadmanFigmaDesigns.png)
@@ -32,17 +32,17 @@ This is from our Figma file where we designed some of the UI for the game and ca
 
 <div class="ImageGrid">
 
-![Describe what is in this image](/assets/DelsteadmanSelect1.png)
+![Describe what is in this image](/assets/DelsteadmanSelect1.PNG)
 
-![Describe what is in this image](/assets/DelsteadmanSelect2.png)
+![Describe what is in this image](/assets/DelsteadmanSelect2.PNG)
 
 </div>
 Here you can see behind the scenes of the room and how I used the white material of the wall to bounce light back onto the characters to make the scene brighter and how dim it would look without it.
 
-![Describe what is in this image](/assets/DelsteadmanZombieAI.png)
+![Describe what is in this image](/assets/DelsteadmanZombieAI.PNG)
 Here is a snapshot of the zombie AI that I made from scratch for the game. This was particularly hard as the zombies in Project Zomboid are really advanced and I wanted to have it as accurate to the original game as possible. Some of the things I implemented were: Zombies will idle around the map over time, Zombies will walk towards the player if they see or hear them, Zombies will lose interest in the player if they don't see or hear them for a while. One of the lesions I learnt about this was about staticky typed vs dynamically typed variables in godot. By not specifying what variable type it is, int, str, array etc.. It left it up to the compiler to interpret it and made the zombie AI a lot less performant than it could have been if I staticky typed it.
 
-![Describe what is in this image](/assets/InsideBigHouse.png)
+![Describe what is in this image](/assets/InsideBigHouse.PNG)
 We recreated all of the interiors for each house in the area, unfortunately not all the furniture was placed around as people lost interest in making the game for the time being. However, I did go out of my way to add as much life to the game as possible. I did this by making functional light switches for each house and I made animations for intractable objects.
 
 <iframe

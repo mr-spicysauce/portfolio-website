@@ -54,15 +54,15 @@ These were my final designs for VR that incorporated the good practices and desi
 
 <div class="ImageGrid">
 
-![Describe what is in this image](/assets/VRAddTasks.png)
+![Describe what is in this image](/assets/VRAddTasks.PNG)
 
-![Describe what is in this image](/assets/VRTasks.png)
+![Describe what is in this image](/assets/VRTasks.PNG)
 
 </div>
 
 One of the biggest things for me when coding up this GUI was to make it as expandable as possible. When looking back on some of my older projects such as my Dungeon Resurgence I can see how hard it would be to maintain the code and add more and more items later on. I wanted to have as many “scenarios” as possible and to have the ability to make your own just like Kovvaks. So I opted to make all my GUI dynamic, one of the ways I did this was to add each scenario to the GUI list as it was loaded from a JSON file, you can see a part of the code in these screenshots.
 
-![Describe what is in this image](/assets/VRGun.png)
+![Describe what is in this image](/assets/VRGun.PNG)
 
 For most of my other projects I havent attempted to stick to my naming conventions and overcomplicating parts of the game that doesnt need to be over complicated, for example this gun has been simplified as much as possible with all extra things removed and I have stuck to using pascal-case for my node naming.
 
