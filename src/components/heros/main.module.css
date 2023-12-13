@@ -45,6 +45,7 @@
     font-weight: 400;
     line-height: normal;
     margin: 0px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .mainHeroInner h3 {
@@ -56,6 +57,7 @@
     font-weight: 500;
     line-height: normal;
     margin: 0px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .iconsContainer {
@@ -69,6 +71,19 @@
     transition: opacity 0.15s ease-in;
 }
 
+.iconsContainer a svg {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
 .iconsContainer a:hover {
     opacity: 0.5;
+}
+
+.mainHeroVideo {
+    position: fixed;
+    z-index: -1;
+    height: 100%;
+    pointer-events: none;
+    object-fit: cover;
+    width: 100%;
 }

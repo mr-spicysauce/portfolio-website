@@ -16,10 +16,13 @@ import CloseIcon from '@/assets/SVG/CloseIcon'
 export async function getStaticProps({ params }) {
     const projectData = await getAllProjectData()
 
+    const project = projectData.find((p) => p.id == params.project_id)
+
     return {
+        notFound: !project,
         props: {
             projects: projectData,
-            project: projectData.find((p) => p.id == params.project_id),
+            project,
         },
     }
 }
@@ -52,7 +55,7 @@ export default function Project({ projects, project }) {
         }
     }, [projectFocusImage])
 
-    return (
+    return project ? (
         <>
             <Header
                 scrollRef={titleHolderRef}
@@ -111,7 +114,7 @@ export default function Project({ projects, project }) {
                 </dialog>
 
                 <div
-                    className={PortfolioItemStyle.MainContent}
+                    className={`${PortfolioItemStyle.MainContent} MarkdownContent`}
                     onClick={(e) => onContentClick(e)}
                     dangerouslySetInnerHTML={{
                         __html: project.content,
@@ -127,6 +130,7 @@ export default function Project({ projects, project }) {
                 <div className={styles.itemContainer}>
                     {projects
                         .filter((p) => p.id != project.id)
+                        .splice(0, 3)
                         .map((project) => {
                             return (
                                 <PortfolioItem
@@ -139,5 +143,7 @@ export default function Project({ projects, project }) {
                 </div>
             </div>
         </>
+    ) : (
+        <></>
     )
 }

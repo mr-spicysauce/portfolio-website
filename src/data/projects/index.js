@@ -11,6 +11,7 @@ export async function getAllProjectIds() {
     )
     const mdFiles = dirContents
         .filter((f) => f.endsWith('.md'))
+        .filter((f) => !f.startsWith('_'))
         .map((f) => f.replace('.md', ''))
 
     return mdFiles
@@ -47,7 +48,7 @@ export async function getProjectData(id) {
 
     // Use remark to convert markdown into HTML string
     const processedContent = await remark()
-        .use(html)
+        .use(html, { sanitize: false })
         .process(matterResult.content)
 
     const content = processedContent.toString()

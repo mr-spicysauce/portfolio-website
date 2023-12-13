@@ -1,0 +1,35 @@
+.MarkdownContent p {
+    margin: 0;
+}
+
+.MarkdownContent img,
+.MarkdownContent iframe {
+    width: 100%;
+    border-radius: 12px;
+    transition: box-shadow 0.15s ease-in;
+    cursor: pointer;
+}
+
+.MarkdownContent iframe {
+    aspect-ratio: 16 / 9;
+}
+
+.MarkdownContent a {
+    color: #70bafa;
+    font-weight: bold;
+    transition: opacity 0.15s ease-in;
+}
+
+.MarkdownContent a:hover {
+    opacity: 0.5;
+}
+
+.MarkdownContent img:hover,
+.MarkdownContent iframe:hover {
+    box-shadow: 0px 0px 0px 4px rgba(255, 255, 255, 0.25);
+}
+
+.MarkdownContent .ImageGrid {
+    display: flex;
+    gap: 16px;
+}

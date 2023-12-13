@@ -19,7 +19,7 @@ export const PortfolioHero = ({ projects }) => {
 
                 <div className="VideoEmbed">
                     <iframe
-                        src="https://www.youtube.com/embed/45csSEotJY8?si=J2XOUKWezHfHJ3bO"
+                        src="https://www.youtube.com/embed/N73Y3bNjUys?si=5EkH29qzY5AomnYI"
                         title="YouTube video"
                         allowFullScreen
                         frameborder="0"

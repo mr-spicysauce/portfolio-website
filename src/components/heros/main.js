@@ -7,6 +7,16 @@ export const MainHero = ({ takeRef }) => {
     return (
         <div ref={takeRef} className={mainHeroStyles.mainHeroContainer}>
             <div className={mainHeroStyles.mainHeroInner}>
+                <video
+                    autoPlay
+                    muted
+                    loop
+                    className={mainHeroStyles.mainHeroVideo}
+                    poster="/assets/main1.png"
+                >
+                    <source src="/assets/main1.webm" type="video/webm"></source>
+                </video>
+
                 <h1>{process.env.NEXT_PUBLIC_WEBSITE_NAME || 'Jack'}</h1>
                 <h3>Game Developer and Programmer</h3>
                 <div className={mainHeroStyles.iconsContainer}>
