@@ -40,7 +40,7 @@ This is from our Figma file where we designed some of the UI for the game and ca
 Here you can see behind the scenes of the room and how I used the white material of the wall to bounce light back onto the characters to make the scene brighter and how dim it would look without it.
 
 ![Describe what is in this image](/assets/DelsteadmanZombieAI.png)
-Here is a snapshot of the zombie AI that I made from scratch for the game. This was particularly hard as the zombies in Project Zomboid are really advanced and I wanted to have it as accurate to the original game as possible. Some of the things I implemented were: Zombies will idle around the map over time, Zombies will walk towards the player if they see or hear them, Zombies will lose interest in the player if they don't see or hear them for a while. One of the lesions I learnt about this was about staticly typed vs dynamically typed variables in godot. By not specifying what variable type it is, int, str, array etc.. It left it up to the compiler to interpret it and made the zombie AI a lot less preformant than it could have been if I staticly typed it.
+Here is a snapshot of the zombie AI that I made from scratch for the game. This was particularly hard as the zombies in Project Zomboid are really advanced and I wanted to have it as accurate to the original game as possible. Some of the things I implemented were: Zombies will idle around the map over time, Zombies will walk towards the player if they see or hear them, Zombies will lose interest in the player if they don't see or hear them for a while. One of the lesions I learnt about this was about staticky typed vs dynamically typed variables in godot. By not specifying what variable type it is, int, str, array etc.. It left it up to the compiler to interpret it and made the zombie AI a lot less performant than it could have been if I staticky typed it.
 
 ![Describe what is in this image](/assets/InsideBigHouse.png)
 We recreated all of the interiors for each house in the area, unfortunately not all the furniture was placed around as people lost interest in making the game for the time being. However, I did go out of my way to add as much life to the game as possible. I did this by making functional light switches for each house and I made animations for intractable objects.
@@ -62,4 +62,4 @@ I would like to credit Ben (parsons00) for helping create the 3D models for the 
 
 I would like to credit DJ (HardLadBarry) for creating each of the houses in the game and for being the primary story writer and designer.
 
-I would like to credit [quaternius](https://quaternius.com/) and his website as we used his asset packs for many of the ingame weapons and items.
+I would like to credit [quaternius](https://quaternius.com/) and his website as we used his asset packs for many of the in game weapons and items.

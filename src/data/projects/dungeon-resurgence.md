@@ -8,7 +8,7 @@ roles: ['Solo Developer']
 description: 'A full game made for a college assignment which is fully documented.'
 ---
 
-Dungen Resurgence was the first game I made from start to finish complete with design documents, test plans and community feedback. This was part of my IT level 3 course at college in which I achieved a distinction. I have attached a PDF with my entire 27-page assignment for you to view as that would contain all the information about it. I have also linked the GitHub page where you can download the game and look at all the code I wrote for the game.
+Dungeon Resurgence was the first game I made from start to finish complete with design documents, test plans and community feedback. This was part of my IT level 3 course at college in which I achieved a distinction. I have attached a PDF with my entire 27-page assignment for you to view as that would contain all the information about it. I have also linked the GitHub page where you can download the game and look at all the code I wrote for the game.
 
 [View the PDF here](/assets/8.2GameDev.pdf)
 
